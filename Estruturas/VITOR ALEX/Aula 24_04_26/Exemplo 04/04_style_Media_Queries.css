@@ -1,0 +1,91 @@
+/* ================================ */
+/* CONFIGURAÇÃO BASE */
+/* ================================ */
+
+html {
+  font-size: 16px; /* 1rem = 16px */
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+}
+
+/* ================================ */
+/* CONTAINER */
+/* ================================ */
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background: #ffffff;
+  border: 2px solid #333;
+}
+
+/* ================================ */
+/* GRID BASE (CELULAR) */
+/* ================================ */
+
+.cards {
+  display: grid;
+
+  /*
+    Layout inicial (mobile first):
+    uma coluna
+  */
+  grid-template-columns: 1fr;
+  gap: 1rem;
+
+  margin-top: 1.5rem;
+}
+
+/* ================================ */
+/* MEDIA QUERY – TABLET */
+/* ================================ */
+
+@media (min-width: 768px) {
+  .cards {
+    /*
+      Em telas médias (tablet):
+      duas colunas
+    */
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* ================================ */
+/* MEDIA QUERY – DESKTOP */
+/* ================================ */
+
+@media (min-width: 1024px) {
+  .cards {
+    /*
+      Em telas grandes (desktop):
+      quatro colunas
+    */
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ================================ */
+/* CARD */
+/* ================================ */
+
+.card {
+  padding: 1rem;
+  color: white;
+  border-radius: 0.6rem;
+  text-align: center;
+}
+
+/* ================================ */
+/* CORES DOS CARDS (visual didático) */
+/* ================================ */
+
+.card-1 { background: #6a5acd; } /* roxo */
+.card-2 { background: #4caf50; } /* verde */
+.card-3 { background: #ff9800; } /* laranja */
+.card-4 { background: #e91e63; } /* rosa */

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Imagens e Elementos Fluidos</title>
+  <link rel="stylesheet" href="03_style_Elementos_Fluidos.css">
+</head>
+
+<body>
+
+  <h1 style="text-align:center;">
+    Imagens e Elementos Fluidos
+  </h1>
+
+  <!-- ============================= -->
+  <!-- CONTAINER -->
+  <!-- ============================= -->
+  <div class="container">
+
+    <p>
+      Este exemplo demonstra a diferença entre uma imagem
+      <strong>não responsiva</strong> e uma imagem
+      <strong>fluida</strong>, usando a mesma imagem de montanha.
+    </p>
+
+    <!-- ============================= -->
+    <!-- IMAGEM NÃO RESPONSIVA -->
+    <!-- ============================= -->
+    <h2>Imagem não fluida (problema)</h2>
+
+    <div class="box-fixa">
+      <img src="flor.jpg" alt="Imagem de flor">
+    </div>
+
+    <p class="legenda erro">
+      A imagem mantém o tamanho original e pode transbordar do container.
+    </p>
+
+    <!-- ============================= -->
+    <!-- IMAGEM FLUIDA -->
+    <!-- ============================= -->
+    <h2>Imagem fluida (correto)</h2>
+
+    <div class="box-fluida">
+      <img src="flor.jpg" alt="Imagem de flor" class="imagem-fluida">
+    </div>
+
+    <p class="legenda ok">
+      A imagem se ajusta ao container e mantém a proporção.
+    </p>
+
+  </div>
+
+</body>
+</html>

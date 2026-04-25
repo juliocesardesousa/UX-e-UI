@@ -1,0 +1,79 @@
+/* ================================ */
+/* CONFIGURAÇÃO BASE */
+/* ================================ */
+
+html {
+  font-size: 16px; /* 1rem = 16px */
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+}
+
+/* ================================ */
+/* CONTAINER */
+ /* ================================ */
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background: white;
+  border: 2px solid #333;
+}
+
+/* ================================ */
+/* FLEXBOX BASE (CELULAR) */
+/* ================================ */
+
+.flex-cards {
+  display: flex;
+
+  /*
+    Layout mobile-first:
+    itens empilhados (coluna)
+  */
+  flex-direction: column;
+  gap: 1rem;
+
+  margin-top: 1.5rem;
+}
+
+/* ================================ */
+/* MEDIA QUERY – TABLET E ACIMA */
+/* ================================ */
+
+@media (min-width: 768px) {
+  .flex-cards {
+    /*
+      Em telas maiores:
+      itens em linha
+    */
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* ================================ */
+/* CARD */
+/* ================================ */
+
+.card {
+  flex: 1;               /* todos os cards crescem igualmente */
+  padding: 1rem;
+  color: white;
+  border-radius: 0.6rem;
+  text-align: center;
+}
+
+/* ================================ */
+/* CORES DOS CARDS */
+/* ================================ */
+
+.card-1 { background: #6a5acd; } /* roxo */
+.card-2 { background: #4caf50; } /* verde */
+.card-3 { background: #ff9800; } /* laranja */
+.card-4 { background: #e91e63; } /* rosa */

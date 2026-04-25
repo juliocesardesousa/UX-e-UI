@@ -1,0 +1,74 @@
+/* ================================ */
+/* CONFIGURAÇÃO BASE */
+/* ================================ */
+
+html {
+  font-size: 16px; /* 1rem = 16px */
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f3f3;
+}
+
+/* ================================ */
+/* CONTAINER */
+/* ================================ */
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background: #ffffff;
+  border: 2px solid #333;
+}
+
+/* ================================ */
+/* BOX NÃO RESPONSIVO */
+/* ================================ */
+
+.box-fixa {
+  width: 300px;           /* largura fixa */
+  border: 3px solid red;
+  margin-bottom: 0.5rem;
+  overflow: visible;     /* permite estourar */
+}
+
+/* ================================ */
+/* BOX FLUIDO */
+/* ================================ */
+
+.box-fluida {
+  width: 100%;            /* acompanha o container */
+  max-width: 100%;
+  border: 3px solid green;
+  margin-bottom: 0.5rem;
+}
+
+/* ================================ */
+/* IMAGEM FLUIDA */
+/* ================================ */
+
+.imagem-fluida {
+  max-width: 100%;  /* nunca ultrapassa o container */
+  height: auto;     /* preserva proporção */
+  display: block;   /* remove espaços indesejados */
+}
+
+/* ================================ */
+/* LEGENDAS */
+/* ================================ */
+
+.legenda {
+  font-size: 0.95rem;
+}
+
+.erro {
+  color: red;
+}
+
+.ok {
+  color: green;
+}
