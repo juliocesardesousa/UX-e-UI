@@ -1,0 +1,21 @@
+/* cabecalho  */
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 4rem;
+    border-bottom: 1px solid black;
+}
+.cabecalho img{
+    padding: 1rem;
+}
+.cabecalho ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 5rem;
+}
+.cabecalho li{
+    display: flex;
+    padding-right: 1rem;
+}
