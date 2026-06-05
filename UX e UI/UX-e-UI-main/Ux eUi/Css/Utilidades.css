@@ -1,0 +1,148 @@
+/* Base */
+html,
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* Permite empurrar o footer para baixo */
+    margin: 0px;
+    padding: 0px;
+    /* Ocupa toda a altura da tela */
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+}
+
+/* estrelas */
+.checked {
+    color: orange;
+}
+
+.fa-star {
+    font-size: 0.5rem;
+
+}
+
+/* filtro de livros  */
+section p {
+    display: none;
+}
+
+section:target p {
+    display: block;
+}
+
+/* cor padrao do hero */
+.hero {
+    width: 100vw;
+    height: 1000vh;
+    background: radial-gradient(circle, #1e2dce, #1a0d6b);
+}
+
+.card-container a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+/* CSS do popup  */
+/* Link que abre o popup */
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    font-size: 0.87325rem;
+}
+
+/* Fundo escurecido */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+/* Caixa do popup */
+.popuplivro {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #1e2dce;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.popuplivro p {
+    color: white;
+    margin: 0;
+    margin-top: 1rem;
+}
+
+/* Mostrar quando o alvo é ativado */
+#mensagem:target {
+    display: block;
+}
+
+/* Botão de fechar */
+.fechar {
+    font-size: 0.87325rem;
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    background: #8400ff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+/* media querie index */
+@media (min-width: 780px) {
+    .slide{
+       width: 80%;
+    }
+    .filtros{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+}
+@media(min-width: 1023px){
+    .slide{
+       width: 65%;
+    }
+    .filtros a{
+        padding: 1rem;
+        font-size: 2rem;
+    }
+    .card{
+        width: 12.5rem;
+    }
+    .card-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 4rem;
+    }
+}
+/* media queriedetalhes livros */
+@media (min-width: 780px) {
+    .descricao-livro {
+        margin: 0.7rem 6rem;
+    }
+}
+@media (min-width: 1023px) {
+    .descricao-livro {
+        font-size: 1.2rem;
+        margin: 2rem 20rem;
+    }
+    
+}

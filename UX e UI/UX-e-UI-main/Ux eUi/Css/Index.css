@@ -1,0 +1,156 @@
+
+/* Container do carrossel */
+.carrossel {
+    margin: 1rem;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Esconde a barra de rolagem */
+.carrossel::-webkit-scrollbar {
+    display: none;
+}
+
+/* Cada slide */
+.slide {
+    flex: none;
+    width: 85%;
+    height: auto;
+    scroll-snap-align: start;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+/* Indicadores */
+.indicadores {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.indicadores a {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin: 0 5px;
+    background: #ccc;
+    border-radius: 50%;
+    text-indent: -9999px;
+    transition: background 0.3s;
+}
+
+.indicadores a:hover {
+    background: #333;
+}
+
+/* Cards */
+.card-container{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+.card{
+    width: 160px;
+    height: 95%;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    border: solid 1px #7b85f1;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin: 8px;
+    padding: 8px;
+}
+/* efeitos simples */
+.card:hover{
+    box-shadow: 0 0 11px #7b85f1,
+                0 0 22px  #6a0572 ;
+    transform: translateY(-5px);
+    transition: all ease 0.5s;
+}
+.card img{
+    width: 100%;
+    height: auto;
+}
+.card-container{
+    padding: 16px;
+}
+.card-container h3{
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+.card-container p{
+    color:#666;
+    font-size: 15px;
+    line-height: 1.5;
+}
+.card-container .btn{
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 16px;
+    color: #fff;
+}
+
+
+
+/* filtro teste */
+/* Esconde todas as seções */
+.filtros{
+    display: flex;
+    justify-content: space-evenly;
+}
+.filtros a {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    background: black;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: white;
+    transition: background 0.5s;
+}
+.filtros a:hover {
+    background: white;
+    color: black;
+}
+/* botão ativo */
+.filtros a:focus,
+.filtros a:active {
+    background: white;
+    color: black;
+}
+
+/* Esconde todas as seções por padrão */
+section {
+  display: none;
+}
+
+/* Mostra ALL por padrão */
+#all {
+  display: block;
+}
+
+/* Mostra apenas a seção alvo */
+section:target {
+  display: block;
+}
+
+/* Esconde ALL quando outra seção é alvo */
+section:target ~ #all {
+  display: none;
+}
