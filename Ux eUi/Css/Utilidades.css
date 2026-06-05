@@ -1,6 +1,7 @@
 /* Base */
 html,
 body {
+
     display: flex;
     flex-direction: column;
     /* Permite empurrar o footer para baixo */
@@ -11,148 +12,22 @@ body {
     font-family: Arial, sans-serif;
     background: #f2f2f2;
 }
-/*
- Estilo dos botões de filtro 
-.filtros {
-    text-align: center;
-    margin-bottom: 20px;
+/* estrelas */
+.checked {
+    color: orange;
 }
-
-.filtros input[type="radio"] {
+/* filtro de livros  */
+section p{
     display: none;
 }
-
-.filtros label {
-    background: #ddd;
-    padding: 8px 15px;
-    margin: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.filtros input[type="radio"]:checked+label {
-    background: #007BFF;
-    color: white;
-}
-
- Container dos itens 
-.itens {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-}
-
-.item {
-    background: white;
-    padding: 20px;
-    border-radius: 5px;
-    width: 150px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, opacity 0.3s;
-}
-
- Oculta todos inicialmente 
-.item {
-    display: none;
- }
-
-/* Regras de exibição baseadas no filtro 
-#todos:checked ~ .itens .item {
+section:target p{
     display: block;
 }
-
-#frutas:checked~.itens .fruta {
-    display: block;
+/* cor padrao do hero */
+.hero{
+    background: radial-gradient(circle, #1e2dce, #1a0d6b);
 }
-
-#verduras:checked~.itens .verdura {
-    display: block;
-}
-
-#bebidas:checked~.itens .bebida {
-    display: block;
-} */
-/* Botão principal */
-#toggleFiltros {
-    display: none;
-}
-
-label[for="toggleFiltros"] {
-    background: #007BFF;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-/* Container dos filtros */
-.filtros {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease;
-    text-align: center;
-    margin-top: 15px;
-}
-
-#toggleFiltros:checked ~ .filtros {
-    max-height: 200px; /* abre suavemente */
-}
-
-/* Botões de categoria */
-.filtros input[type="radio"] {
-    display: none;
-}
-
-.filtros label {
-    background: #ddd;
-    padding: 8px 15px;
-    margin: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.filtros input[type="radio"]:checked + label {
-    background: #007BFF;
-    color: white;
-}
-
-/* Itens */
-.itens {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.item {
-    background: white;
-    padding: 20px;
-    border-radius: 5px;
-    width: 150px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: opacity 0.3s, transform 0.3s;
-    display: none;
-}
-
-/* Regras de exibição */
-#todos:checked ~ .itens .item {
-    display: block;
-}
-
-#romance:checked ~ .itens .romance {
-    display: block;
-}
-
-#terror:checked ~ .itens .terror {
-    display: block;
-}
-
-#didaticos:checked ~ .itens .didatico {
-    display: block;
+.card-container a{
+    text-decoration: none;
+    color: inherit;
 }
