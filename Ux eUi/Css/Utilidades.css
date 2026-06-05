@@ -1,33 +1,93 @@
 /* Base */
 html,
 body {
-
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     /* Permite empurrar o footer para baixo */
     margin: 0px;
     padding: 0px;
-    height: 100%;
     /* Ocupa toda a altura da tela */
     font-family: Arial, sans-serif;
     background: #f2f2f2;
 }
+
 /* estrelas */
 .checked {
     color: orange;
 }
+
 /* filtro de livros  */
-section p{
+section p {
     display: none;
 }
-section:target p{
+
+section:target p {
     display: block;
 }
+
 /* cor padrao do hero */
-.hero{
+.hero {
+    width: 100vw;
+    height: 1000vh;
     background: radial-gradient(circle, #1e2dce, #1a0d6b);
 }
-.card-container a{
+
+.card-container a {
     text-decoration: none;
     color: inherit;
 }
+
+
+
+/* CSS do popup  */
+ /* Link que abre o popup */
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            color:inherit;
+            font-size: 0.87325rem;
+        }
+
+        /* Fundo escurecido */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            display: none;
+        }
+
+        /* Caixa do popup */
+        .popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        /* Mostrar quando o alvo é ativado */
+        #mensagem:target {
+            display: block;
+        }
+
+        /* Botão de fechar */
+        .fechar {
+            font-size: 0.87325rem;
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 12px;
+            background: #f44336;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+        }

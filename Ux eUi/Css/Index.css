@@ -56,13 +56,15 @@
 
 /* Cards */
 .card-container{
+    height: auto;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 1rem;
 }
 .card{
-    width: 150px;
+    width: 160px;
+    height: 27rem;
     background-color: #f0f0f0;
     border-radius: 8px;
     overflow: hidden;
@@ -117,7 +119,7 @@
 .filtros a {
     margin-top: 0.5rem;
     padding: 0.5rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     background: black;
     border-radius: 0.5rem;
     text-decoration: none;
