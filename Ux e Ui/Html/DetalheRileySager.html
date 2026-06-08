@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do livro</title>
+    <link rel="stylesheet" href="/Ux e Ui/Css/DetalheRileySager.css">
+    <link rel="stylesheet" href="/Ux e Ui/Css/Utilidades.css">
+    <link rel="stylesheet" href="/Ux e Ui/Css/cabecalho.css">
+    <link rel="stylesheet" href="/Ux e Ui/Css/ProfileNavBars.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!-- cabecalho -->
+    <header class="cabecalho">
+        <img src="/Ux e Ui/Assets/LogoNova.png" alt="Logo da empresa">
+        <ul>
+            <li><a href="/Index.html"><i class="fa fa-home"></i></a></li>
+            <li><a href="#navbar-profile"><i class="fa fa-user-circle-o"></i></a></li>
+        </ul>
+    </header>
+    <!-- Popup -->
+    <header id="navbar-profile" class="overlay">
+        <div class="popup">
+            <a href="/Ux e Ui/Html/MinhaBiblioteca.html" class="navbar-profile">Minha biblioteca</a>
+            <a href="/Ux e Ui/Html/MinhaBiblioteca.html" class="navbar-profile">Perfil</a>
+            <a href="#" class="navbar-profile">Ajuda</a>
+            <a href="#" class="navbar-profile">Sair</a>
+        </div>
+    </header>
+
+    <main class="hero">
+
+        <p class="tag">Terror</p>
+        <h2>O Massacre da Família Hope</h2>
+        <img src="/Ux e Ui/Assets/CapaLivroRileySager.webp" alt="Imagem da capa do livro">
+        <h2>Descrição do livro</h2>
+        <p class="descricao-livro">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat facilis iste molestias modi. Quis numquam eveniet commodi facilis dicta corporis magni nemo tempore, voluptatum illo accusantium. Et placeat atque maiores?</p>
+
+        <!-- Botão que abre o popup -->
+        <button><a href="#mensagem" class="btn">Adicionar livro</a></button>
+        <button class="voltar-index"><a href="/Index.html">Voltar</a></button>
+
+        <!-- Popup -->
+        <div id="mensagem" class="overlay">
+            <div class="popuplivro">
+                <p>✅ Livro adicionado a sua biblioteca, aproveite a leitura</p>
+                <br>
+                <a href="#" class="fechar">Fechar</a>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>
