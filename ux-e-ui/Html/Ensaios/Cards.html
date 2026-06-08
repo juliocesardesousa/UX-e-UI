@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cards em 3 Colunas</title>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #f0f0f0;
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+.card{
+    width: 200px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin: 8px;
+    padding: 8px;
+}
+.card img{
+    width: 100%;
+    height: auto;
+}
+.card-container{
+    padding: 16px;
+}
+.card-container h3{
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+.card-container p{
+    color:#666;
+    font-size: 15px;
+    line-height: 1.5;
+}
+.card-container .btn{
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 16px;
+    color: #fff;
+}
+
+
+
+</style>
+</head>
+<body>
+ <div class="card-container">
+    <div class="card">
+        <img src="/Assets/CapaLivroRileySager.webp" alt="livro">
+        <div class="card-content">
+            <h3>Título livro</h3>
+            <p>Nome do autor</p>
+            <!-- local das estrelas -->
+            
+        </div>
+    </div>
+    <div class="card">
+        <img src="/Assets/CapaLivroRileySager.webp" alt="livro">
+        <div class="card-content">
+            <h3>card 2 </h3>
+            <p></p>
+            <a href="" class="btn">Read more</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="/Assets/CapaLivroRileySager.webp" alt="livro">
+        <div class="card-content">
+            <h3>card 3 </h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio sit voluptatem laborum est facilis perferendis doloremque laboriosam repellat sint quae tempora corrupti, reprehenderit vitae dicta quod aliquam temporibus illo explicabo!</p>
+            <a href="" class="btn">Read more</a>
+        </div>
+    </div>
+ </div>
+</body>
+</html>
