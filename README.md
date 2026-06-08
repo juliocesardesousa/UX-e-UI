@@ -1,23 +1,6 @@
 # UX-e-UI
 Atividades da aula de UX e UI
 
-
-
-
-https://docs.google.com/spreadsheets/d/1DMG6uiKKqh3bb_bABSEmNrpFKAdAQAdaeGNS4safh18/edit?usp=sharing
-
-Site bom para referencia:
-https://play.google.com/store/books
-
-Site zuado para mudar:
-https://www.estantevirtual.com.br/?msockid=27cf070af6fe6ba220cc101ef7b36a2e
-
-
-Prompt:
-You are an expert HTML and CSS developer tasked with creating a clean, well-structured website based on a renowned professor's step-by-step document. You must adhere strictly to all guidelines and specifications provided.
-
-This project focuses on UX/UI refactoring. You will take a cluttered website and transform it into a simpler, more readable, and visually appealing minimalist design, adhering to Nielsen's Usability Heuristics and Don Norman's design principles.
-
 # File Structure and Organization
 
 All created files must be organized into the following folders:
