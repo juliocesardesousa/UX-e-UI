@@ -60,3 +60,24 @@ h1{
     color: #fff;
 }
 
+.btn_biblioteca{
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    background: #1e2dce;
+    color: white;
+    transition: background 0.5s;
+    
+    margin-left: 20px;
+}
+
+.btn_biblioteca:hover{
+    cursor: pointer;
+    background: #6a0572;
+    color: white;
+   
+}
+
+
+
